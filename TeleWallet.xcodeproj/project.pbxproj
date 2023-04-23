@@ -13,7 +13,6 @@
 		257152E229F57D2C00AF988F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 257152E029F57D2C00AF988F /* Main.storyboard */; };
 		257152E529F57D2C00AF988F /* TeleWallet.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 257152E329F57D2C00AF988F /* TeleWallet.xcdatamodeld */; };
 		257152E729F57D2E00AF988F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 257152E629F57D2E00AF988F /* Assets.xcassets */; };
-		257152EA29F57D2E00AF988F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 257152E829F57D2E00AF988F /* LaunchScreen.storyboard */; };
 		257152F529F57D2E00AF988F /* TeleWalletTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257152F429F57D2E00AF988F /* TeleWalletTests.swift */; };
 		257152FF29F57D2E00AF988F /* TeleWalletUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257152FE29F57D2E00AF988F /* TeleWalletUITests.swift */; };
 		2571530129F57D2E00AF988F /* TeleWalletUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2571530029F57D2E00AF988F /* TeleWalletUITestsLaunchTests.swift */; };
@@ -44,7 +43,6 @@
 		257152E129F57D2C00AF988F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		257152E429F57D2C00AF988F /* TeleWallet.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TeleWallet.xcdatamodel; sourceTree = "<group>"; };
 		257152E629F57D2E00AF988F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		257152E929F57D2E00AF988F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		257152EB29F57D2E00AF988F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		257152F029F57D2E00AF988F /* TeleWalletTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TeleWalletTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		257152F429F57D2E00AF988F /* TeleWalletTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeleWalletTests.swift; sourceTree = "<group>"; };
@@ -106,7 +104,6 @@
 				257152DE29F57D2C00AF988F /* ViewController.swift */,
 				257152E029F57D2C00AF988F /* Main.storyboard */,
 				257152E629F57D2E00AF988F /* Assets.xcassets */,
-				257152E829F57D2E00AF988F /* LaunchScreen.storyboard */,
 				257152EB29F57D2E00AF988F /* Info.plist */,
 				257152E329F57D2C00AF988F /* TeleWallet.xcdatamodeld */,
 			);
@@ -234,7 +231,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				257152EA29F57D2E00AF988F /* LaunchScreen.storyboard in Resources */,
 				257152E729F57D2E00AF988F /* Assets.xcassets in Resources */,
 				257152E229F57D2C00AF988F /* Main.storyboard in Resources */,
 			);
@@ -307,14 +303,6 @@
 				257152E129F57D2C00AF988F /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		257152E829F57D2E00AF988F /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				257152E929F57D2E00AF988F /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -446,7 +434,6 @@
 				INFOPLIST_FILE = TeleWallet/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -474,7 +461,6 @@
 				INFOPLIST_FILE = TeleWallet/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

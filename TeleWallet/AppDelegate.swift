@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  TeleWallet
-//
-//  Created by Кирилл Падалица on 23.04.2023.
-//
-
 import UIKit
 import CoreData
 
