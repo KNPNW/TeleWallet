@@ -12,6 +12,7 @@
 		257152DF29F57D2C00AF988F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257152DE29F57D2C00AF988F /* ViewController.swift */; };
 		257152E229F57D2C00AF988F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 257152E029F57D2C00AF988F /* Main.storyboard */; };
 		257152E729F57D2E00AF988F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 257152E629F57D2E00AF988F /* Assets.xcassets */; };
+		2592779929F59DE200E1A9C6 /* Modules in Frameworks */ = {isa = PBXBuildFile; productRef = 2592779829F59DE200E1A9C6 /* Modules */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,10 +26,11 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		257152D429F57D2C00AF988F /* Frameworks */ = {
+		2592779529F59B2400E1A9C6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2592779929F59DE200E1A9C6 /* Modules in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +42,7 @@
 			children = (
 				257152D929F57D2C00AF988F /* TeleWallet */,
 				257152D829F57D2C00AF988F /* Products */,
+				2592779029F5968A00E1A9C6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +67,13 @@
 			path = TeleWallet;
 			sourceTree = "<group>";
 		};
+		2592779029F5968A00E1A9C6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -72,15 +82,18 @@
 			buildConfigurationList = 2571530429F57D2E00AF988F /* Build configuration list for PBXNativeTarget "TeleWallet" */;
 			buildPhases = (
 				257152D329F57D2C00AF988F /* Sources */,
-				257152D429F57D2C00AF988F /* Frameworks */,
 				257152D529F57D2C00AF988F /* Resources */,
 				2571530D29F5825400AF988F /* ShellScript */,
+				2592779529F59B2400E1A9C6 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = TeleWallet;
+			packageProductDependencies = (
+				2592779829F59DE200E1A9C6 /* Modules */,
+			);
 			productName = TeleWallet;
 			productReference = 257152D729F57D2C00AF988F /* TeleWallet.app */;
 			productType = "com.apple.product-type.application";
@@ -365,6 +378,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2592779829F59DE200E1A9C6 /* Modules */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Modules;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 257152CF29F57D2C00AF988F /* Project object */;
 }
