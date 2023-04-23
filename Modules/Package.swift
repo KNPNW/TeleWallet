@@ -11,7 +11,7 @@ let package = Package(
     products: [
         .library(
             name: "Modules",
-            targets: ["Theme"])
+            targets: ["Theme", "Wallet", "Market", "Settings"])
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
@@ -19,6 +19,22 @@ let package = Package(
         .target(
             name: "Theme",
             dependencies: [],
-            path: "Sources/Theme")
+            path: "Sources/Theme"
+        ),
+        .target(
+            name: "Wallet",
+            dependencies: [],
+            path: "Sources/Wallet"
+        ),
+        .target(
+            name: "Market",
+            dependencies: [],
+            path: "Sources/Market"
+        ),
+        .target(
+            name: "Settings",
+            dependencies: [],
+            path: "Sources/Settings"
+        )
     ]
 )
