@@ -1,0 +1,624 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		257152DB29F57D2C00AF988F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257152DA29F57D2C00AF988F /* AppDelegate.swift */; };
+		257152DD29F57D2C00AF988F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257152DC29F57D2C00AF988F /* SceneDelegate.swift */; };
+		257152DF29F57D2C00AF988F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257152DE29F57D2C00AF988F /* ViewController.swift */; };
+		257152E229F57D2C00AF988F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 257152E029F57D2C00AF988F /* Main.storyboard */; };
+		257152E529F57D2C00AF988F /* TeleWallet.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 257152E329F57D2C00AF988F /* TeleWallet.xcdatamodeld */; };
+		257152E729F57D2E00AF988F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 257152E629F57D2E00AF988F /* Assets.xcassets */; };
+		257152EA29F57D2E00AF988F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 257152E829F57D2E00AF988F /* LaunchScreen.storyboard */; };
+		257152F529F57D2E00AF988F /* TeleWalletTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257152F429F57D2E00AF988F /* TeleWalletTests.swift */; };
+		257152FF29F57D2E00AF988F /* TeleWalletUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257152FE29F57D2E00AF988F /* TeleWalletUITests.swift */; };
+		2571530129F57D2E00AF988F /* TeleWalletUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2571530029F57D2E00AF988F /* TeleWalletUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		257152F129F57D2E00AF988F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 257152CF29F57D2C00AF988F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 257152D629F57D2C00AF988F;
+			remoteInfo = TeleWallet;
+		};
+		257152FB29F57D2E00AF988F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 257152CF29F57D2C00AF988F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 257152D629F57D2C00AF988F;
+			remoteInfo = TeleWallet;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		257152D729F57D2C00AF988F /* TeleWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeleWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		257152DA29F57D2C00AF988F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		257152DC29F57D2C00AF988F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		257152DE29F57D2C00AF988F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		257152E129F57D2C00AF988F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		257152E429F57D2C00AF988F /* TeleWallet.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TeleWallet.xcdatamodel; sourceTree = "<group>"; };
+		257152E629F57D2E00AF988F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		257152E929F57D2E00AF988F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		257152EB29F57D2E00AF988F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		257152F029F57D2E00AF988F /* TeleWalletTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TeleWalletTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		257152F429F57D2E00AF988F /* TeleWalletTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeleWalletTests.swift; sourceTree = "<group>"; };
+		257152FA29F57D2E00AF988F /* TeleWalletUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TeleWalletUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		257152FE29F57D2E00AF988F /* TeleWalletUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeleWalletUITests.swift; sourceTree = "<group>"; };
+		2571530029F57D2E00AF988F /* TeleWalletUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeleWalletUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		257152D429F57D2C00AF988F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		257152ED29F57D2E00AF988F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		257152F729F57D2E00AF988F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		257152CE29F57D2C00AF988F = {
+			isa = PBXGroup;
+			children = (
+				257152D929F57D2C00AF988F /* TeleWallet */,
+				257152F329F57D2E00AF988F /* TeleWalletTests */,
+				257152FD29F57D2E00AF988F /* TeleWalletUITests */,
+				257152D829F57D2C00AF988F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		257152D829F57D2C00AF988F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				257152D729F57D2C00AF988F /* TeleWallet.app */,
+				257152F029F57D2E00AF988F /* TeleWalletTests.xctest */,
+				257152FA29F57D2E00AF988F /* TeleWalletUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		257152D929F57D2C00AF988F /* TeleWallet */ = {
+			isa = PBXGroup;
+			children = (
+				257152DA29F57D2C00AF988F /* AppDelegate.swift */,
+				257152DC29F57D2C00AF988F /* SceneDelegate.swift */,
+				257152DE29F57D2C00AF988F /* ViewController.swift */,
+				257152E029F57D2C00AF988F /* Main.storyboard */,
+				257152E629F57D2E00AF988F /* Assets.xcassets */,
+				257152E829F57D2E00AF988F /* LaunchScreen.storyboard */,
+				257152EB29F57D2E00AF988F /* Info.plist */,
+				257152E329F57D2C00AF988F /* TeleWallet.xcdatamodeld */,
+			);
+			path = TeleWallet;
+			sourceTree = "<group>";
+		};
+		257152F329F57D2E00AF988F /* TeleWalletTests */ = {
+			isa = PBXGroup;
+			children = (
+				257152F429F57D2E00AF988F /* TeleWalletTests.swift */,
+			);
+			path = TeleWalletTests;
+			sourceTree = "<group>";
+		};
+		257152FD29F57D2E00AF988F /* TeleWalletUITests */ = {
+			isa = PBXGroup;
+			children = (
+				257152FE29F57D2E00AF988F /* TeleWalletUITests.swift */,
+				2571530029F57D2E00AF988F /* TeleWalletUITestsLaunchTests.swift */,
+			);
+			path = TeleWalletUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		257152D629F57D2C00AF988F /* TeleWallet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2571530429F57D2E00AF988F /* Build configuration list for PBXNativeTarget "TeleWallet" */;
+			buildPhases = (
+				257152D329F57D2C00AF988F /* Sources */,
+				257152D429F57D2C00AF988F /* Frameworks */,
+				257152D529F57D2C00AF988F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TeleWallet;
+			productName = TeleWallet;
+			productReference = 257152D729F57D2C00AF988F /* TeleWallet.app */;
+			productType = "com.apple.product-type.application";
+		};
+		257152EF29F57D2E00AF988F /* TeleWalletTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2571530729F57D2E00AF988F /* Build configuration list for PBXNativeTarget "TeleWalletTests" */;
+			buildPhases = (
+				257152EC29F57D2E00AF988F /* Sources */,
+				257152ED29F57D2E00AF988F /* Frameworks */,
+				257152EE29F57D2E00AF988F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				257152F229F57D2E00AF988F /* PBXTargetDependency */,
+			);
+			name = TeleWalletTests;
+			productName = TeleWalletTests;
+			productReference = 257152F029F57D2E00AF988F /* TeleWalletTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		257152F929F57D2E00AF988F /* TeleWalletUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2571530A29F57D2E00AF988F /* Build configuration list for PBXNativeTarget "TeleWalletUITests" */;
+			buildPhases = (
+				257152F629F57D2E00AF988F /* Sources */,
+				257152F729F57D2E00AF988F /* Frameworks */,
+				257152F829F57D2E00AF988F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				257152FC29F57D2E00AF988F /* PBXTargetDependency */,
+			);
+			name = TeleWalletUITests;
+			productName = TeleWalletUITests;
+			productReference = 257152FA29F57D2E00AF988F /* TeleWalletUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		257152CF29F57D2C00AF988F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					257152D629F57D2C00AF988F = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					257152EF29F57D2E00AF988F = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 257152D629F57D2C00AF988F;
+					};
+					257152F929F57D2E00AF988F = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 257152D629F57D2C00AF988F;
+					};
+				};
+			};
+			buildConfigurationList = 257152D229F57D2C00AF988F /* Build configuration list for PBXProject "TeleWallet" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 257152CE29F57D2C00AF988F;
+			productRefGroup = 257152D829F57D2C00AF988F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				257152D629F57D2C00AF988F /* TeleWallet */,
+				257152EF29F57D2E00AF988F /* TeleWalletTests */,
+				257152F929F57D2E00AF988F /* TeleWalletUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		257152D529F57D2C00AF988F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				257152EA29F57D2E00AF988F /* LaunchScreen.storyboard in Resources */,
+				257152E729F57D2E00AF988F /* Assets.xcassets in Resources */,
+				257152E229F57D2C00AF988F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		257152EE29F57D2E00AF988F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		257152F829F57D2E00AF988F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		257152D329F57D2C00AF988F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				257152DF29F57D2C00AF988F /* ViewController.swift in Sources */,
+				257152DB29F57D2C00AF988F /* AppDelegate.swift in Sources */,
+				257152E529F57D2C00AF988F /* TeleWallet.xcdatamodeld in Sources */,
+				257152DD29F57D2C00AF988F /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		257152EC29F57D2E00AF988F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				257152F529F57D2E00AF988F /* TeleWalletTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		257152F629F57D2E00AF988F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				257152FF29F57D2E00AF988F /* TeleWalletUITests.swift in Sources */,
+				2571530129F57D2E00AF988F /* TeleWalletUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		257152F229F57D2E00AF988F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 257152D629F57D2C00AF988F /* TeleWallet */;
+			targetProxy = 257152F129F57D2E00AF988F /* PBXContainerItemProxy */;
+		};
+		257152FC29F57D2E00AF988F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 257152D629F57D2C00AF988F /* TeleWallet */;
+			targetProxy = 257152FB29F57D2E00AF988F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		257152E029F57D2C00AF988F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				257152E129F57D2C00AF988F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		257152E829F57D2E00AF988F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				257152E929F57D2E00AF988F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2571530229F57D2E00AF988F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2571530329F57D2E00AF988F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2571530529F57D2E00AF988F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QT7KUKG7HV;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TeleWallet/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "kpadalitsa-gmail.com.TeleWallet";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2571530629F57D2E00AF988F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QT7KUKG7HV;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TeleWallet/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "kpadalitsa-gmail.com.TeleWallet";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2571530829F57D2E00AF988F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QT7KUKG7HV;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "kpadalitsa-gmail.com.TeleWalletTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TeleWallet.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TeleWallet";
+			};
+			name = Debug;
+		};
+		2571530929F57D2E00AF988F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QT7KUKG7HV;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "kpadalitsa-gmail.com.TeleWalletTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TeleWallet.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TeleWallet";
+			};
+			name = Release;
+		};
+		2571530B29F57D2E00AF988F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QT7KUKG7HV;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "kpadalitsa-gmail.com.TeleWalletUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TeleWallet;
+			};
+			name = Debug;
+		};
+		2571530C29F57D2E00AF988F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QT7KUKG7HV;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "kpadalitsa-gmail.com.TeleWalletUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TeleWallet;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		257152D229F57D2C00AF988F /* Build configuration list for PBXProject "TeleWallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2571530229F57D2E00AF988F /* Debug */,
+				2571530329F57D2E00AF988F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2571530429F57D2E00AF988F /* Build configuration list for PBXNativeTarget "TeleWallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2571530529F57D2E00AF988F /* Debug */,
+				2571530629F57D2E00AF988F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2571530729F57D2E00AF988F /* Build configuration list for PBXNativeTarget "TeleWalletTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2571530829F57D2E00AF988F /* Debug */,
+				2571530929F57D2E00AF988F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2571530A29F57D2E00AF988F /* Build configuration list for PBXNativeTarget "TeleWalletUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2571530B29F57D2E00AF988F /* Debug */,
+				2571530C29F57D2E00AF988F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		257152E329F57D2C00AF988F /* TeleWallet.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				257152E429F57D2C00AF988F /* TeleWallet.xcdatamodel */,
+			);
+			currentVersion = 257152E429F57D2C00AF988F /* TeleWallet.xcdatamodel */;
+			path = TeleWallet.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 257152CF29F57D2C00AF988F /* Project object */;
+}
