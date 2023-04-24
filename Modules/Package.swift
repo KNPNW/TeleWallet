@@ -23,7 +23,7 @@ let package = Package(
         ),
         .target(
             name: "Wallet",
-            dependencies: [],
+            dependencies: ["Theme"],
             path: "Sources/Wallet"
         ),
         .target(
