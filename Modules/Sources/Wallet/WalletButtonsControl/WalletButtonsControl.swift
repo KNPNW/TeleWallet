@@ -73,6 +73,6 @@ class WalletButtonsControl: UIView {
 
 private extension WalletButtonsControl {
     enum Constants {
-        static let sizeButton: CGFloat = 65
+        static let sizeButton: CGFloat = 55
     }
 }

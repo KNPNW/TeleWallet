@@ -8,5 +8,6 @@ public enum Theme {
 
     public enum Fonts {
         public static let balance = UIFont.boldSystemFont(ofSize: 35)
+        public static let walletButton = UIFont.monospacedSystemFont(ofSize: 12, weight: .regular)
     }
 }

@@ -15,16 +15,16 @@ class TabBarCoordinator {
         let wallet = WalletViewController()
         let market = MarketViewController()
         let settings = SettingsViewController()
-        let walletNC = UINavigationController(rootViewController: wallet)
+//        let walletNC = UINavigationController(rootViewController: wallet)
         let marketNC = UINavigationController(rootViewController: market)
         let settingsNC = UINavigationController(rootViewController: settings)
 
-        walletNC.tabBarItem = UITabBarItem(title: "Wallet", image: UIImage(systemName: "creditcard"), tag: 0)
+        wallet.tabBarItem = UITabBarItem(title: "Wallet", image: UIImage(systemName: "creditcard"), tag: 0)
         marketNC.tabBarItem = UITabBarItem(title: "Market", image: UIImage(systemName: "arrow.up.arrow.down"), tag: 1)
         settingsNC.tabBarItem = UITabBarItem(title: "Setting", image: UIImage(systemName: "gear"), tag: 2)
-        let controllers = [walletNC, marketNC, settingsNC]
+        let controllers = [wallet, marketNC, settingsNC]
 
-        controllers.forEach { $0.navigationBar.prefersLargeTitles = true }
+//        controllers.forEach { $0.navigationBar.prefersLargeTitles = true }
 
         self.prepareTabBarController(withTabControllers: controllers)
     }

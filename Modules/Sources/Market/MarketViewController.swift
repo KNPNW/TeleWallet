@@ -1,10 +1,3 @@
-//
-//  MarketViewController.swift
-//  
-//
-//  Created by Кирилл Падалица on 23.04.2023.
-//
-
 import UIKit
 
 public class MarketViewController: UIViewController {
