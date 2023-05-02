@@ -56,8 +56,8 @@ class WalletNavigationBar: UIView {
     }
 
     private func setupUI() {
-        addSubview(title)
         addSubview(chainView)
+        addSubview(title)
         chainView.addSubview(chainImageView)
         chainView.addSubview(chainTitle)
     }
@@ -68,9 +68,8 @@ class WalletNavigationBar: UIView {
             chainView.bottomAnchor.constraint(equalTo: bottomAnchor),
             chainView.widthAnchor.constraint(equalToConstant: Constants.sizeChainButton),
             chainView.trailingAnchor.constraint(equalTo: trailingAnchor),
-            title.heightAnchor.constraint(equalTo: heightAnchor),
-            title.widthAnchor.constraint(equalToConstant: 200),
-            title.centerYAnchor.constraint(equalTo: centerYAnchor),
+            title.topAnchor.constraint(equalTo: topAnchor),
+            title.bottomAnchor.constraint(equalTo: bottomAnchor),
             title.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 30),
             title.trailingAnchor.constraint(equalTo: chainView.leadingAnchor),
             chainImageView.widthAnchor.constraint(equalToConstant: Constants.sizeChainImage),

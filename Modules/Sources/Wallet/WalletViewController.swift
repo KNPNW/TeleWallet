@@ -1,5 +1,6 @@
 import UIKit
 import AudioToolbox
+import MnemonicGenerator
 
 public class WalletViewController: UIViewController {
 
@@ -39,7 +40,7 @@ public class WalletViewController: UIViewController {
 
         view.backgroundColor = .systemGray6
 
-//        print(MnemonicGenerator.generateMnemonicString())
+        print(MnemonicGenerator.generateMnemonicString())
 
         setupDelegate()
         setupUI()
@@ -71,15 +72,16 @@ public class WalletViewController: UIViewController {
             scroll.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             scroll.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             scroll.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
-            walletView.topAnchor.constraint(equalTo: walletNavigationBar.bottomAnchor),
+            walletView.topAnchor.constraint(equalTo: walletNavigationBar.safeAreaLayoutGuide.bottomAnchor),
             walletView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
             walletView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
             walletViewBottomConstraint,
-            contentView.topAnchor.constraint(equalTo: scroll.topAnchor, constant: Constants.sizeHeader),
+            contentView.topAnchor.constraint(equalTo: scroll.contentLayoutGuide.topAnchor, constant: Constants.sizeHeader),
             contentView.heightAnchor.constraint(equalToConstant: 1000),
             contentView.widthAnchor.constraint(equalTo: view.widthAnchor),
-            contentView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            contentView.bottomAnchor.constraint(equalTo: scroll.bottomAnchor)
+            contentView.leadingAnchor.constraint(equalTo: scroll.leadingAnchor),
+            contentView.trailingAnchor.constraint(equalTo: scroll.trailingAnchor),
+            contentView.bottomAnchor.constraint(equalTo: scroll.contentLayoutGuide.bottomAnchor)
         ])
     }
 }

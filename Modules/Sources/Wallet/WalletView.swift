@@ -42,7 +42,7 @@ class WalletView: UIView {
             walletButtons.topAnchor.constraint(equalTo: balanceLabel.bottomAnchor, constant: 10),
             walletButtons.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),
             walletButtons.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20),
-            walletButtons.heightAnchor.constraint(equalToConstant: 70)
+            walletButtons.heightAnchor.constraint(equalToConstant: 80)
         ])
     }
 }

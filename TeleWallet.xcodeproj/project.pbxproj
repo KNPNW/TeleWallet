@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		253F6B502A011A940073D81F /* CreateWalletCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253F6B4F2A011A940073D81F /* CreateWalletCoordinator.swift */; };
 		255BBA4929F5BB9C00FCA47D /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255BBA4829F5BB9C00FCA47D /* AppCoordinator.swift */; };
 		255BBA4B29F5C0D400FCA47D /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255BBA4A29F5C0D400FCA47D /* Coordinator.swift */; };
 		255BBA4D29F5C72100FCA47D /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255BBA4C29F5C72100FCA47D /* TabBarCoordinator.swift */; };
@@ -16,9 +17,12 @@
 		257152E229F57D2C00AF988F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 257152E029F57D2C00AF988F /* Main.storyboard */; };
 		257152E729F57D2E00AF988F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 257152E629F57D2E00AF988F /* Assets.xcassets */; };
 		2592779929F59DE200E1A9C6 /* Modules in Frameworks */ = {isa = PBXBuildFile; productRef = 2592779829F59DE200E1A9C6 /* Modules */; };
+		25FD26B429FD7BE000A9BC49 /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FD26B329FD7BE000A9BC49 /* AuthCoordinator.swift */; };
+		25FD26B929FD88C900A9BC49 /* MnemonicGenerator in Frameworks */ = {isa = PBXBuildFile; productRef = 25FD26B829FD88C900A9BC49 /* MnemonicGenerator */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		253F6B4F2A011A940073D81F /* CreateWalletCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateWalletCoordinator.swift; sourceTree = "<group>"; };
 		255BBA4829F5BB9C00FCA47D /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		255BBA4A29F5C0D400FCA47D /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		255BBA4C29F5C72100FCA47D /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
@@ -29,6 +33,7 @@
 		257152E129F57D2C00AF988F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		257152E629F57D2E00AF988F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		257152EB29F57D2E00AF988F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		25FD26B329FD7BE000A9BC49 /* AuthCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25FD26B929FD88C900A9BC49 /* MnemonicGenerator in Frameworks */,
 				2592779929F59DE200E1A9C6 /* Modules in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -43,11 +49,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		253F6B4E2A011A5C0073D81F /* AuthCoordinators */ = {
+			isa = PBXGroup;
+			children = (
+				25FD26B329FD7BE000A9BC49 /* AuthCoordinator.swift */,
+				253F6B4F2A011A940073D81F /* CreateWalletCoordinator.swift */,
+			);
+			path = AuthCoordinators;
+			sourceTree = "<group>";
+		};
 		255BBA4729F5BB8700FCA47D /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
+				25FD26BA29FFF34100A9BC49 /* Protocols */,
+				253F6B4E2A011A5C0073D81F /* AuthCoordinators */,
 				255BBA4829F5BB9C00FCA47D /* AppCoordinator.swift */,
-				255BBA4A29F5C0D400FCA47D /* Coordinator.swift */,
 				255BBA4C29F5C72100FCA47D /* TabBarCoordinator.swift */,
 			);
 			path = Coordinators;
@@ -91,6 +107,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		25FD26BA29FFF34100A9BC49 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				255BBA4A29F5C0D400FCA47D /* Coordinator.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -110,6 +134,7 @@
 			name = TeleWallet;
 			packageProductDependencies = (
 				2592779829F59DE200E1A9C6 /* Modules */,
+				25FD26B829FD88C900A9BC49 /* MnemonicGenerator */,
 			);
 			productName = TeleWallet;
 			productReference = 257152D729F57D2C00AF988F /* TeleWallet.app */;
@@ -139,6 +164,9 @@
 				Base,
 			);
 			mainGroup = 257152CE29F57D2C00AF988F;
+			packageReferences = (
+				25FD26B529FD884B00A9BC49 /* XCRemoteSwiftPackageReference "MnemonicGenerator" */,
+			);
 			productRefGroup = 257152D829F57D2C00AF988F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -186,9 +214,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				255BBA4B29F5C0D400FCA47D /* Coordinator.swift in Sources */,
+				253F6B502A011A940073D81F /* CreateWalletCoordinator.swift in Sources */,
 				255BBA4929F5BB9C00FCA47D /* AppCoordinator.swift in Sources */,
 				255BBA4D29F5C72100FCA47D /* TabBarCoordinator.swift in Sources */,
 				257152DF29F57D2C00AF988F /* ViewController.swift in Sources */,
+				25FD26B429FD7BE000A9BC49 /* AuthCoordinator.swift in Sources */,
 				257152DB29F57D2C00AF988F /* AppDelegate.swift in Sources */,
 				257152DD29F57D2C00AF988F /* SceneDelegate.swift in Sources */,
 			);
@@ -334,8 +364,8 @@
 				INFOPLIST_FILE = TeleWallet/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -361,8 +391,8 @@
 				INFOPLIST_FILE = TeleWallet/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -399,10 +429,26 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		25FD26B529FD884B00A9BC49 /* XCRemoteSwiftPackageReference "MnemonicGenerator" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/KNPNW/MnemonicGenerator.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
 		2592779829F59DE200E1A9C6 /* Modules */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Modules;
+		};
+		25FD26B829FD88C900A9BC49 /* MnemonicGenerator */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 25FD26B529FD884B00A9BC49 /* XCRemoteSwiftPackageReference "MnemonicGenerator" */;
+			productName = MnemonicGenerator;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

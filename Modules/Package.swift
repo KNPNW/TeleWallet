@@ -11,7 +11,10 @@ let package = Package(
     products: [
         .library(
             name: "Modules",
-            targets: ["Theme", "Wallet", "Market", "Settings"])
+            targets: ["Theme", "Wallet", "Market", "Settings", "Authorization"])
+    ],
+    dependencies: [
+        .package(url: "https://github.com/KNPNW/MnemonicGenerator.git", from: "0.1.0")
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
@@ -23,7 +26,7 @@ let package = Package(
         ),
         .target(
             name: "Wallet",
-            dependencies: ["Theme"],
+            dependencies: ["Theme", "MnemonicGenerator"],
             path: "Sources/Wallet"
         ),
         .target(
@@ -35,6 +38,11 @@ let package = Package(
             name: "Settings",
             dependencies: [],
             path: "Sources/Settings"
+        ),
+        .target(
+            name: "Authorization",
+            dependencies: ["Theme", "MnemonicGenerator"],
+            path: "Sources/Authorization"
         )
     ]
 )

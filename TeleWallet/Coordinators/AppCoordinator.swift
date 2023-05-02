@@ -1,24 +1,35 @@
 import UIKit
 
-class AppCoordinator {
+class AppCoordinator: Coordinator {
 
-    let tabBarController: UITabBarController
+    var childCoordinators: [Coordinator] = []
+    var navigationController: UINavigationController = UINavigationController()
+
     var tabBarCoordinator: TabBarCoordinator?
+    var authCoordinator: AuthCoordinator?
     let window: UIWindow
 
     init(window: UIWindow) {
         self.window = window
-        tabBarController = UITabBarController()
     }
 
     func start() {
-        window.rootViewController = tabBarController
+        window.rootViewController = navigationController
         window.makeKeyAndVisible()
-        startFirstVC()
+        if true {
+            startAuthVC()
+        } else {
+            startFirstVC()
+        }
     }
 
     private func startFirstVC() {
-        tabBarCoordinator = TabBarCoordinator(tabBarController)
+        tabBarCoordinator = TabBarCoordinator(UITabBarController())
         tabBarCoordinator?.start()
+    }
+
+    private func startAuthVC() {
+        authCoordinator = AuthCoordinator(navigationController: navigationController)
+        authCoordinator?.start()
     }
 }
