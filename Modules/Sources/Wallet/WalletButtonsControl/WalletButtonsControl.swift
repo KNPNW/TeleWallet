@@ -9,6 +9,8 @@ import UIKit
 
 class WalletButtonsControl: UIView {
 
+    var complitionHandler: (() -> Void)?
+
     private let stackView: UIStackView = {
         let stackView = UIStackView()
         stackView.axis = .horizontal
@@ -24,8 +26,13 @@ class WalletButtonsControl: UIView {
         return button
     }()
 
-    private let addButton: WalletButton = {
+    private lazy var addButton: WalletButton = {
         let button = WalletButton(image: UIImage(systemName: "plus")!, title: "Add")
+        let gesture = UITapGestureRecognizer(
+            target: self,
+            action: #selector(didTappedAdd)
+        )
+        button.addGestureRecognizer(gesture)
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
@@ -74,5 +81,12 @@ class WalletButtonsControl: UIView {
 private extension WalletButtonsControl {
     enum Constants {
         static let sizeButton: CGFloat = 55
+    }
+}
+
+private extension WalletButtonsControl {
+    @objc
+    private func didTappedAdd() {
+        complitionHandler?()
     }
 }

@@ -6,6 +6,7 @@ class WalletNavigationBar: UIView {
     private let title: UILabel = {
         let label = UILabel()
         label.text = "TeleWallet"
+        label.textColor = Theme.Colors.purple
         label.textAlignment = .left
         label.font = UIFont.boldSystemFont(ofSize: 30)
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -15,11 +16,9 @@ class WalletNavigationBar: UIView {
     private let chainView: UIView = {
         let view = UIView()
         view.backgroundColor = .black
-//        view.clipsToBounds = true
         view.layer.cornerRadius = 20
         view.layer.maskedCorners = [.layerMinXMinYCorner, .layerMinXMaxYCorner]
-
-        view.layer.shadowColor = UIColor.gray.cgColor
+        view.layer.shadowColor = Theme.Colors.purple.cgColor
         view.layer.shadowOpacity = 1
         view.layer.shadowOffset = CGSize.zero
         view.layer.shadowRadius = 5

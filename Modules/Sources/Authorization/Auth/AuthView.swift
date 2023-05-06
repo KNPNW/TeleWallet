@@ -26,7 +26,7 @@ class AuthView: UIView {
         button.setTitle("Create Wallet", for: .normal)
         button.backgroundColor = Theme.Colors.purple
         button.titleLabel?.font = Theme.Fonts.authButton
-        button.layer.cornerRadius = 20
+        button.layer.cornerRadius = Theme.StyleElements.buttonCornerRadius
         button.addTarget(self, action: #selector(didPressCreateWallet), for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
@@ -35,7 +35,7 @@ class AuthView: UIView {
     private lazy var importWalletButton: UIButton = {
         let button = UIButton()
         button.setTitle("Import Wallet", for: .normal)
-        button.backgroundColor = .white
+        button.backgroundColor = Theme.Colors.background
         button.setTitleColor(Theme.Colors.purple, for: .normal)
         button.titleLabel?.font = Theme.Fonts.authButton
         button.addTarget(self, action: #selector(didPressImportWallet), for: .touchUpInside)

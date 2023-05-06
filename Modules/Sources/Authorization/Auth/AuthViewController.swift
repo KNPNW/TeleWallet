@@ -1,4 +1,5 @@
 import UIKit
+import Theme
 
 public class AuthViewController: UIViewController {
 
@@ -16,13 +17,9 @@ public class AuthViewController: UIViewController {
     public override func viewDidLoad() {
         super.viewDidLoad()
 
-        setupUI()
-        setupLayout()
-    }
-
-    private func setupUI() {
-        view.backgroundColor = .white
+        view.backgroundColor = Theme.Colors.background
         view.addSubview(authView)
+        setupLayout()
     }
 
     private func setupLayout() {

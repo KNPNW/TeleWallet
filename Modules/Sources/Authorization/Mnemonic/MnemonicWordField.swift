@@ -1,12 +1,12 @@
 import UIKit
 import Theme
 
-class WordTextField: UIView {
+class MnemonicWordField: UIView {
 
     private let view: UIView = {
         let view = UIView()
         view.layer.borderColor = Theme.Colors.purple.cgColor
-        view.layer.borderWidth = 1
+        view.layer.borderWidth = 1.5
         view.layer.cornerRadius = 15
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
@@ -18,8 +18,11 @@ class WordTextField: UIView {
         return textField
     }()
 
-    init(number: Int) {
+    init(number: Int, delegate: UITextFieldDelegate?) {
         super.init(frame: .zero)
+
+        textField.delegate = delegate
+        textField.tag = number
         textField.placeholder = "\(number)"
         setupUI()
         setupLayout()
@@ -47,8 +50,15 @@ class WordTextField: UIView {
         ])
     }
 
-    func inserWord(_ word: String) {
-        textField.text = word
-        textField.isEnabled = false
+    func insertText(_ text: String) {
+        textField.text = text
+    }
+
+    func getText() -> String? {
+        textField.text?.lowercased()
+    }
+
+    func isEnabled(_ value: Bool) {
+        textField.isEnabled = value
     }
 }

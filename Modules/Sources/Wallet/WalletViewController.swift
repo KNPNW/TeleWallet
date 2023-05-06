@@ -1,12 +1,15 @@
 import UIKit
 import AudioToolbox
 import MnemonicGenerator
+import Theme
 
 public class WalletViewController: UIViewController {
 
     private var stateTable = true
     private var navigationBarConstraint: NSLayoutConstraint!
     private var walletViewBottomConstraint: NSLayoutConstraint!
+
+    public var complitionHandler: (() -> Void)?
 
     private lazy var walletNavigationBar: WalletNavigationBar = {
         let navigationBar = WalletNavigationBar()
@@ -16,6 +19,9 @@ public class WalletViewController: UIViewController {
 
     private lazy var walletView: WalletView = {
         let view = WalletView()
+        view.walletButtons.complitionHandler = { [weak self] in
+            self?.complitionHandler?()
+        }
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
@@ -38,9 +44,7 @@ public class WalletViewController: UIViewController {
     public override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.backgroundColor = .systemGray6
-
-        print(MnemonicGenerator.generateMnemonicString())
+        view.backgroundColor = Theme.Colors.background
 
         setupDelegate()
         setupUI()

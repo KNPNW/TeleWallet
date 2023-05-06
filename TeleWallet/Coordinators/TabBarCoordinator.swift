@@ -2,37 +2,46 @@ import UIKit
 import Wallet
 import Market
 import Settings
+import Theme
 
-class TabBarCoordinator {
+class TabBarCoordinator: Coordinator {
 
-    var tabBarController: UITabBarController
+    var childCoordinators: [Coordinator] = []
+    var navigationController: UINavigationController
+    var tabBarController: UITabBarController = UITabBarController()
 
-    required init(_ tabBarController: UITabBarController) {
-        self.tabBarController = tabBarController
+    required init(navigationController: UINavigationController) {
+        self.navigationController = navigationController
     }
 
     func start() {
         let wallet = WalletViewController()
         let market = MarketViewController()
         let settings = SettingsViewController()
-//        let walletNC = UINavigationController(rootViewController: wallet)
-        let marketNC = UINavigationController(rootViewController: market)
-        let settingsNC = UINavigationController(rootViewController: settings)
 
         wallet.tabBarItem = UITabBarItem(title: "Wallet", image: UIImage(systemName: "creditcard"), tag: 0)
-        marketNC.tabBarItem = UITabBarItem(title: "Market", image: UIImage(systemName: "arrow.up.arrow.down"), tag: 1)
-        settingsNC.tabBarItem = UITabBarItem(title: "Setting", image: UIImage(systemName: "gear"), tag: 2)
-        let controllers = [wallet, marketNC, settingsNC]
+        market.tabBarItem = UITabBarItem(title: "Market", image: UIImage(systemName: "arrow.up.arrow.down"), tag: 1)
+        settings.tabBarItem = UITabBarItem(title: "Setting", image: UIImage(systemName: "gear"), tag: 2)
+        let controllers = [wallet, market, settings]
 
-//        controllers.forEach { $0.navigationBar.prefersLargeTitles = true }
+        self.navigationController.navigationBar.isHidden = true
+        self.tabBarController.tabBar.backgroundColor = Theme.Colors.background
+        self.tabBarController.tabBar.tintColor = Theme.Colors.purple
+        self.tabBarController.setViewControllers(controllers, animated: true)
 
-        self.prepareTabBarController(withTabControllers: controllers)
+        self.navigationController.setViewControllers([tabBarController], animated: true)
+
+        wallet.complitionHandler = { [weak self] in
+            do {
+                try KeychainManager.delete(
+                    service: "mnemonicPhase",
+                    account: UIDevice.current.identifierForVendor?.uuidString ?? ""
+                )
+            } catch {
+                print(error)
+            }
+
+        }
     }
 
-    private func prepareTabBarController(withTabControllers tabControllers: [UIViewController]) {
-        tabBarController.tabBar.isTranslucent = false
-//        tabBarController.tabBar.tintColor = Theme.Colors.tabBarItemColor
-//        tabBarController.tabBar.backgroundColor = Theme.Colors.background
-        tabBarController.setViewControllers(tabControllers, animated: true)
-    }
 }

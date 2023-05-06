@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		253F6B502A011A940073D81F /* CreateWalletCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253F6B4F2A011A940073D81F /* CreateWalletCoordinator.swift */; };
+		253F6B552A01438E0073D81F /* PasswordCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253F6B542A01438E0073D81F /* PasswordCoordinator.swift */; };
+		253F6B582A0307710073D81F /* ModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253F6B572A0307710073D81F /* ModuleFactory.swift */; };
+		253F6B5A2A065F140073D81F /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253F6B592A065F130073D81F /* KeychainManager.swift */; };
 		255BBA4929F5BB9C00FCA47D /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255BBA4829F5BB9C00FCA47D /* AppCoordinator.swift */; };
 		255BBA4B29F5C0D400FCA47D /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255BBA4A29F5C0D400FCA47D /* Coordinator.swift */; };
 		255BBA4D29F5C72100FCA47D /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255BBA4C29F5C72100FCA47D /* TabBarCoordinator.swift */; };
@@ -22,7 +24,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		253F6B4F2A011A940073D81F /* CreateWalletCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateWalletCoordinator.swift; sourceTree = "<group>"; };
+		253F6B542A01438E0073D81F /* PasswordCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordCoordinator.swift; sourceTree = "<group>"; };
+		253F6B572A0307710073D81F /* ModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleFactory.swift; sourceTree = "<group>"; };
+		253F6B592A065F130073D81F /* KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
 		255BBA4829F5BB9C00FCA47D /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		255BBA4A29F5C0D400FCA47D /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		255BBA4C29F5C72100FCA47D /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
@@ -53,15 +57,31 @@
 			isa = PBXGroup;
 			children = (
 				25FD26B329FD7BE000A9BC49 /* AuthCoordinator.swift */,
-				253F6B4F2A011A940073D81F /* CreateWalletCoordinator.swift */,
 			);
 			path = AuthCoordinators;
+			sourceTree = "<group>";
+		};
+		253F6B532A01436E0073D81F /* PasswordCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				253F6B542A01438E0073D81F /* PasswordCoordinator.swift */,
+			);
+			path = PasswordCoordinator;
+			sourceTree = "<group>";
+		};
+		253F6B562A0307400073D81F /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				253F6B572A0307710073D81F /* ModuleFactory.swift */,
+			);
+			path = Factories;
 			sourceTree = "<group>";
 		};
 		255BBA4729F5BB8700FCA47D /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
 				25FD26BA29FFF34100A9BC49 /* Protocols */,
+				253F6B532A01436E0073D81F /* PasswordCoordinator */,
 				253F6B4E2A011A5C0073D81F /* AuthCoordinators */,
 				255BBA4829F5BB9C00FCA47D /* AppCoordinator.swift */,
 				255BBA4C29F5C72100FCA47D /* TabBarCoordinator.swift */,
@@ -89,8 +109,10 @@
 		257152D929F57D2C00AF988F /* TeleWallet */ = {
 			isa = PBXGroup;
 			children = (
+				253F6B562A0307400073D81F /* Factories */,
 				255BBA4729F5BB8700FCA47D /* Coordinators */,
 				257152DA29F57D2C00AF988F /* AppDelegate.swift */,
+				253F6B592A065F130073D81F /* KeychainManager.swift */,
 				257152DC29F57D2C00AF988F /* SceneDelegate.swift */,
 				257152DE29F57D2C00AF988F /* ViewController.swift */,
 				257152E029F57D2C00AF988F /* Main.storyboard */,
@@ -214,13 +236,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				255BBA4B29F5C0D400FCA47D /* Coordinator.swift in Sources */,
-				253F6B502A011A940073D81F /* CreateWalletCoordinator.swift in Sources */,
+				253F6B582A0307710073D81F /* ModuleFactory.swift in Sources */,
 				255BBA4929F5BB9C00FCA47D /* AppCoordinator.swift in Sources */,
 				255BBA4D29F5C72100FCA47D /* TabBarCoordinator.swift in Sources */,
 				257152DF29F57D2C00AF988F /* ViewController.swift in Sources */,
 				25FD26B429FD7BE000A9BC49 /* AuthCoordinator.swift in Sources */,
+				253F6B552A01438E0073D81F /* PasswordCoordinator.swift in Sources */,
 				257152DB29F57D2C00AF988F /* AppDelegate.swift in Sources */,
 				257152DD29F57D2C00AF988F /* SceneDelegate.swift in Sources */,
+				253F6B5A2A065F140073D81F /* KeychainManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

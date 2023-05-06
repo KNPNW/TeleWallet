@@ -1,4 +1,5 @@
 import UIKit
+import Theme
 
 class AppCoordinator: Coordinator {
 
@@ -15,21 +16,39 @@ class AppCoordinator: Coordinator {
 
     func start() {
         window.rootViewController = navigationController
+        navigationController.navigationBar.tintColor = Theme.Colors.text
         window.makeKeyAndVisible()
-        if true {
-            startAuthVC()
+
+        let mnemonicPhase = KeychainManager.get(
+            service: "mnemonicPhase",
+            account: UIDevice.current.identifierForVendor?.uuidString ?? ""
+        )
+        if mnemonicPhase != nil {
+            startVerificationVC()
         } else {
-            startFirstVC()
+            startAuthVC()
         }
     }
 
-    private func startFirstVC() {
-        tabBarCoordinator = TabBarCoordinator(UITabBarController())
+    private func startVerificationVC() {
+        let passwordCoordinator = PasswordCoordinator(navigationController: navigationController)
+        childCoordinators.append(passwordCoordinator)
+        passwordCoordinator.startChekPassword()
+        passwordCoordinator.completionHandler = { [weak self] in
+            self?.startWalletVC()
+        }
+    }
+
+    private func startWalletVC() {
+        tabBarCoordinator = TabBarCoordinator(navigationController: navigationController)
         tabBarCoordinator?.start()
     }
 
     private func startAuthVC() {
         authCoordinator = AuthCoordinator(navigationController: navigationController)
         authCoordinator?.start()
+        authCoordinator?.completionHandler = {
+            self.startWalletVC()
+        }
     }
 }

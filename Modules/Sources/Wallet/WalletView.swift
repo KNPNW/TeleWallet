@@ -6,13 +6,13 @@ class WalletView: UIView {
     private let balanceLabel: UILabel = {
         let label = UILabel()
         label.text = "$4,232.82"
-        label.font = Theme.Fonts.balance
+        label.font = Theme.Fonts.title
         label.textAlignment = .center
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
 
-    private let walletButtons: WalletButtonsControl = {
+    let walletButtons: WalletButtonsControl = {
         let view = WalletButtonsControl()
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
